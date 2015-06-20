@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<!-- 连接数据库驱动、数据库、用户名和密码 -->
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql:///jacklin</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">root</property>
+
+		<!-- 这项设置会使Hibernate每次连接数据库，都将之前的数据清空 -->
+		<property name="hbm2ddl.auto">none</property>
+
+		<!-- 产生统计信息 -->
+		<property name="generate_statistics">true</property>
+
+		<!--为true表示将Hibernate发送给数据库的sql显示出来 -->
+		<property name="show_sql">true</property>
+
+		<!-- SQL方言是MySQL -->
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+
+
+		<!--对象与数据库表格映像文件 -->
+		<mapping resource="com/jacklin/db/User.hbm.xml" />
+		<mapping resource="com/jacklin/db/Friends.hbm.xml" />
+		<mapping resource="com/jacklin/db/UserLocation.hbm.xml" />
+
+	</session-factory>
+
+</hibernate-configuration>

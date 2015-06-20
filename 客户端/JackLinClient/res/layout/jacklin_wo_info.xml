@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+    
+
+    <RelativeLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/kaka_46_dip"
+        android:background="@drawable/navbar" >
+        <ImageView 
+		    android:id="@+id/iv_back"
+		    android:layout_width="@dimen/kaka_20_dip"
+            android:layout_height="@dimen/kaka_20_dip"
+            android:layout_marginLeft="@dimen/kaka_10_dip"
+            android:layout_marginStart="@dimen/kaka_10_dip"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"
+            tools:ignore="ContentDescription"
+		    />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/kaka_10_dip"
+            android:layout_marginStart="@dimen/kaka_10_dip"
+            android:text="我的名片"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/bt_over"
+            android:layout_width="@dimen/kaka_50_dip"
+            android:layout_height="@dimen/kaka_35_dip"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/kaka_10_dip"
+            android:layout_marginRight="@dimen/kaka_10_dip"
+            android:layout_toEndOf="@id/tv_regist"
+            android:layout_toRightOf="@id/tv_regist"
+            android:background="@drawable/register_btn1"
+            android:scaleType="fitXY"
+            android:text="完成"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card" >
+
+        <com.jacklin.utils.CircleImageView
+            android:id="@+id/iv"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/kaka_40_dip"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/addphoto"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/kaka_50_dip"
+        android:layout_marginTop="@dimen/kaka_15_dip"
+        android:background="#ffffff" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/kaka_10_dip"
+            android:layout_marginStart="@dimen/kaka_10_dip"
+            android:text="昵称"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/kaka_10_dip"
+            android:layout_marginRight="@dimen/kaka_10_dip"
+            android:text="昵称"
+            android:textColor="#999999"
+            android:textSize="17sp"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee" />
+
+    <RelativeLayout
+        android:id="@+id/rl_gender"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/kaka_50_dip"
+        android:background="#ffffff" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/kaka_10_dip"
+            android:layout_marginStart="@dimen/kaka_10_dip"
+            android:text="性别"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tv_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/kaka_10_dip"
+            android:layout_marginRight="@dimen/kaka_10_dip"
+            android:text="性别"
+            android:textColor="#999999"
+            android:textSize="17sp"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee" />
+
+    <RelativeLayout
+        android:id="@+id/rl_mood"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/kaka_50_dip"
+        android:background="#ffffff" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/kaka_10_dip"
+            android:layout_marginStart="@dimen/kaka_10_dip"
+            android:text="情感"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tv_mood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/kaka_10_dip"
+            android:layout_marginRight="@dimen/kaka_10_dip"
+            android:text="情感"
+            android:textColor="#999999"
+            android:textSize="17sp"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee" />
+
+    <RelativeLayout
+        android:id="@+id/rl_birthday"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/kaka_50_dip"
+        android:background="#ffffff" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/kaka_10_dip"
+            android:layout_marginStart="@dimen/kaka_10_dip"
+            android:text="出生日期"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tv_birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/kaka_10_dip"
+            android:layout_marginRight="@dimen/kaka_10_dip"
+            android:text="出生日期"
+            android:textColor="#999999"
+            android:textSize="17sp"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee" />
+
+    <RelativeLayout
+        android:id="@+id/rl_book"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/kaka_50_dip"
+        android:background="#ffffff" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/kaka_10_dip"
+            android:layout_marginStart="@dimen/kaka_10_dip"
+            android:text="喜欢的书籍"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tv_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/kaka_10_dip"
+            android:layout_marginRight="@dimen/kaka_10_dip"
+            android:text="喜欢的书籍"
+            android:textColor="#999999"
+            android:textSize="17sp"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee" />
+
+    <RelativeLayout
+        android:id="@+id/rl_film"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/kaka_50_dip"
+        android:background="#ffffff" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/kaka_10_dip"
+            android:layout_marginStart="@dimen/kaka_10_dip"
+            android:text="喜欢的电影"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tv_film"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/kaka_10_dip"
+            android:layout_marginRight="@dimen/kaka_10_dip"
+            android:text="喜欢的电影"
+            android:textColor="#999999"
+            android:textSize="17sp"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+</LinearLayout>

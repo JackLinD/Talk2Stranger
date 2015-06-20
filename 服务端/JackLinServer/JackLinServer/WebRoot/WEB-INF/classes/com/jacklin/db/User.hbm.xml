@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-Hibernate/Hibernate Mapping DTD 3.0//EN//"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.jacklin.db">
+
+	<class name="User" table="user">
+		<id name="user_phone" column="user_phone" />
+		<property name="name" />
+		<property name="gender" />
+		<property name="photo" />
+		<property name="password" />
+		<property name="birthday" />
+		<property name="book" />
+		<property name="film" />
+		<property name="company_school" />
+		<property name="mood" />
+		<property name="game" />
+		<property name="tip" />
+		<property name="answer" />
+	</class>
+
+</hibernate-mapping>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/kaka_52_dip"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/rl_yaoyiyao"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/kaka_30_dip"
+        android:layout_marginStart="@dimen/kaka_30_dip"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/iv_yaoyiyao"
+            android:layout_width="@dimen/kaka_23_dip"
+            android:layout_height="@dimen/kaka_23_dip"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/icon_r2_c2"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_yaoyiyao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_yaoyiyao"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="摇一摇"
+            android:textColor="#787878"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_xiaoxi"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/iv_xiaoxi"
+            android:layout_width="@dimen/kaka_23_dip"
+            android:layout_height="@dimen/kaka_23_dip"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/icon_r6_c5"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_xiaoxi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_xiaoxi"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="消息"
+            android:textColor="#787878"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_wo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+		android:layout_marginEnd="@dimen/kaka_30_dip"
+        android:layout_marginRight="@dimen/kaka_30_dip"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/iv_wo"
+            android:layout_width="@dimen/kaka_23_dip"
+            android:layout_height="@dimen/kaka_23_dip"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/icon_r6_c10"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_wo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_wo"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="#787878"
+            android:textSize="12sp" 
+            tools:ignore="HardcodedText"/>
+    </RelativeLayout>
+
+</RelativeLayout>

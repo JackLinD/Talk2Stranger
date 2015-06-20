@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>JackLinServer</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<servlet>
+		<servlet-name>GetVerifyCodeServlet</servlet-name>
+		<servlet-class>com.jacklin.code.GetVerifyCodeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetVerifyCodeServlet</servlet-name>
+		<url-pattern>/GetVerifyCodeServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CheckVerifyCodeServlet</servlet-name>
+		<servlet-class>com.jacklin.code.CheckVerifyCodeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CheckVerifyCodeServlet</servlet-name>
+		<url-pattern>/CheckVerifyCodeServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RegisterServlet</servlet-name>
+		<servlet-class>com.jacklin.register.RegisterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegisterServlet</servlet-name>
+		<url-pattern>/RegisterServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.jacklin.login.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>PwdGetVerifyCodeServlet</servlet-name>
+		<servlet-class>com.jacklin.reset.PwdGetVerifyCodeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PwdGetVerifyCodeServlet</servlet-name>
+		<url-pattern>/PwdGetVerifyCodeServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>PwdCheckVerifyCodeServlet</servlet-name>
+		<servlet-class>com.jacklin.reset.PwdCheckVerifyCodeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PwdCheckVerifyCodeServlet</servlet-name>
+		<url-pattern>/PwdCheckVerifyCodeServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ResetPasswordServlet</servlet-name>
+		<servlet-class>com.jacklin.reset.ResetPasswordServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ResetPasswordServlet</servlet-name>
+		<url-pattern>/ResetPasswordServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ResetUserInfoServlet</servlet-name>
+		<servlet-class>com.jacklin.reset.ResetUserInfoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ResetUserInfoServlet</servlet-name>
+		<url-pattern>/ResetUserInfoServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetFriendsServlet</servlet-name>
+		<servlet-class>com.jacklin.friend.GetFriendsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetFriendsServlet</servlet-name>
+		<url-pattern>/GetFriendsServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RemoveFriendServlet</servlet-name>
+		<servlet-class>com.jacklin.friend.RemoveFriendServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RemoveFriendServlet</servlet-name>
+		<url-pattern>/RemoveFriendServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SearchFriendServlet</servlet-name>
+		<servlet-class>com.jacklin.friend.SearchFriendServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SearchFriendServlet</servlet-name>
+		<url-pattern>/SearchFriendServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AddFriendServlet</servlet-name>
+		<servlet-class>com.jacklin.friend.AddFriendServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddFriendServlet</servlet-name>
+		<url-pattern>/AddFriendServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetGameServlet</servlet-name>
+		<servlet-class>com.jacklin.game.GetGameServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetGameServlet</servlet-name>
+		<url-pattern>/GetGameServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CheckGameServlet</servlet-name>
+		<servlet-class>com.jacklin.game.CheckGameServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CheckGameServlet</servlet-name>
+		<url-pattern>/CheckGameServlet</url-pattern>
+	</servlet-mapping>
+	
+	<listener>
+		<listener-class>com.jacklin.chat.ChatListener</listener-class>
+	</listener>
+	
+	<listener>
+		<listener-class>com.jacklin.db.JDBCListener</listener-class>
+	</listener>
+	
+</web-app>

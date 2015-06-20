@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee" >
+    
+    <RelativeLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/kaka_46_dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/navbar" >
+        <ImageView 
+		    android:id="@+id/iv_back"
+		    android:layout_width="@dimen/kaka_20_dip"
+            android:layout_height="@dimen/kaka_20_dip"
+            android:layout_marginLeft="@dimen/kaka_10_dip"
+            android:layout_marginStart="@dimen/kaka_10_dip"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"
+            tools:ignore="ContentDescription"
+		    />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/kaka_10_dip"
+            android:layout_marginStart="@dimen/kaka_10_dip"
+            android:text="陌生人的画板"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/bt_over"
+            android:layout_width="@dimen/kaka_50_dip"
+            android:layout_height="@dimen/kaka_35_dip"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/kaka_10_dip"
+            android:layout_marginRight="@dimen/kaka_10_dip"
+            android:background="@drawable/register_btn1"
+            android:onClick="click"
+            android:scaleType="fitXY"
+            android:text="完成"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_kkkk"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/kaka_50_dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/kaka_10_dip"
+        android:background="#ffffff" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/kaka_10_dip"
+            android:layout_marginStart="@dimen/kaka_10_dip"
+            android:text="提示"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/iv_nextrrr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/kaka_10_dip"
+            android:layout_marginRight="@dimen/kaka_10_dip"
+            android:src="@drawable/register_drawboard_arow"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_location_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/kaka_10_dip"
+            android:layout_marginRight="@dimen/kaka_10_dip"
+            android:layout_toLeftOf="@id/iv_nextrrr"
+            android:layout_toStartOf="@id/iv_nextrrr"
+            android:text="提示"
+            android:textColor="#999999"
+            android:textSize="17sp"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/rl_kkkk"
+        android:background="#eeeeee" />
+
+    <RelativeLayout
+        android:id="@+id/rl_location"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/kaka_50_dip"
+        android:layout_above="@id/view_1"
+        android:background="#ffffff" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/kaka_10_dip"
+            android:layout_marginStart="@dimen/kaka_10_dip"
+            android:text="谜底"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/iv_nextrrrr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/kaka_10_dip"
+            android:layout_marginRight="@dimen/kaka_10_dip"
+            android:src="@drawable/register_drawboard_arow"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_location_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/kaka_10_dip"
+            android:layout_marginRight="@dimen/kaka_10_dip"
+            android:layout_toLeftOf="@id/iv_nextrrrr"
+            android:layout_toStartOf="@id/iv_nextrrrr"
+            android:text="请给出你的谜底"
+            android:textColor="#999999"
+            android:textSize="17sp"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_huahua"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rl_location"
+        android:layout_below="@id/titleLayout"
+        android:layout_margin="@dimen/kaka_10_dip"
+        android:background="@drawable/draw_board" >
+
+        <ImageView
+            android:id="@+id/iv_location"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/kaka_20_dip"
+            android:layout_marginLeft="@dimen/kaka_20_dip"
+            android:layout_marginRight="@dimen/kaka_20_dip"
+            android:layout_marginTop="@dimen/kaka_70_dip"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

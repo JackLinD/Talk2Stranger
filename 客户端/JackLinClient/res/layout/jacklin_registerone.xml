@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/kaka_46_dip"
+        android:background="@drawable/navbar" >
+
+        <Button
+            android:onClick="clicklogin"
+            android:layout_width="@dimen/kaka_50_dip"
+            android:layout_height="@dimen/kaka_30_dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/kaka_10_dip"
+            android:layout_marginStart="@dimen/kaka_10_dip"
+            android:layout_toEndOf="@id/tv_regist"
+            android:layout_toRightOf="@id/tv_regist"
+            android:background="@drawable/register_btn1"
+            android:scaleType="fitXY"
+            android:text="登录"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:layout_width="@dimen/kaka_50_dip"
+            android:layout_height="@dimen/kaka_30_dip"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/kaka_10_dip"
+            android:layout_marginRight="@dimen/kaka_10_dip"
+            android:layout_toEndOf="@id/tv_regist"
+            android:layout_toRightOf="@id/tv_regist"
+            android:background="@drawable/register_btn1"
+            android:onClick="click"
+            android:scaleType="fitXY"
+            android:text="下一步"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/kaka_200_dip"
+        android:layout_height="@dimen/kaka_40_dip"
+        android:layout_marginTop="@dimen/kaka_60_dip"
+        android:background="@drawable/register_input" >
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/kaka_10_dip"
+            android:background="@null"
+            android:hint="手机号"
+            android:inputType="phone"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/kaka_200_dip"
+        android:layout_height="@dimen/kaka_40_dip"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/register_input" >
+
+        <EditText
+            android:id="@+id/et_password1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/kaka_10_dip"
+            android:background="@null"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/kaka_200_dip"
+        android:layout_height="@dimen/kaka_40_dip"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/register_input" >
+
+        <EditText
+            android:id="@+id/et_password2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/kaka_10_dip"
+            android:background="@null"
+            android:hint="确认密码"
+            android:inputType="textPassword"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+</LinearLayout>

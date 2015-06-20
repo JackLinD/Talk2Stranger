@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+    <ImageView android:layout_width="match_parent"
+        android:layout_height="@dimen/kaka_300_dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/shake_picture"
+        android:layout_alignParentBottom="true"
+        tools:ignore="ContentDescription" />
+    
+    <ImageView android:layout_width="@dimen/kaka_200_dip"
+        android:id="@+id/iv_shake"
+        android:layout_height="@dimen/kaka_200_dip"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/shake_character"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/kaka_20_dip"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:layout_width="@dimen/kaka_200_dip"
+        android:layout_height="@dimen/kaka_200_dip"
+        android:layout_above="@id/iv_shake"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/shake_hand"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>

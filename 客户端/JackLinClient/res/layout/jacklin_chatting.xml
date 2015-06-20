@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eeeeee" >
+
+    <RelativeLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/kaka_46_dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/navbar" >
+        <ImageView 
+		    android:id="@+id/iv_back"
+		    android:layout_width="@dimen/kaka_20_dip"
+            android:layout_height="@dimen/kaka_20_dip"
+            android:layout_marginLeft="@dimen/kaka_10_dip"
+            android:layout_marginStart="@dimen/kaka_10_dip"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"
+            tools:ignore="ContentDescription"
+		    />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="某某某"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/chatting_button"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="发送" 
+            tools:ignore="HardcodedText"/>
+
+        <EditText
+            android:id="@+id/chatting_editText"
+            android:inputType="text"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/chatting_button"
+            android:layout_toStartOf="@id/chatting_button"
+            android:singleLine="true"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <!-- 聊天内容 -->
+
+    <com.jacklin.utils.MyListView
+        android:id="@+id/chatting_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/rl_bottom"
+        android:layout_below="@id/titleLayout"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:listSelector="#00000000"
+        android:padding="10dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll" />
+
+</RelativeLayout>

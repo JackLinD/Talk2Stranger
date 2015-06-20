@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/kaka_46_dip"
+        android:background="@drawable/navbar" >
+
+        <Button
+            android:id="@+id/bt_back"
+            android:layout_width="@dimen/kaka_50_dip"
+            android:layout_height="@dimen/kaka_30_dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/kaka_10_dip"
+            android:layout_marginStart="@dimen/kaka_10_dip"
+            android:layout_toEndOf="@id/tv_regist"
+            android:layout_toRightOf="@id/tv_regist"
+            android:background="@drawable/register_btn1"
+            android:scaleType="fitXY"
+            android:text="上一步"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="@dimen/kaka_80_dip"
+        android:layout_height="@dimen/kaka_80_dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/kaka_40_dip"
+        android:src="@drawable/register_picture" 
+        android:scaleType="centerCrop"
+        tools:ignore="ContentDescription"/>
+
+    <RelativeLayout
+        android:layout_width="@dimen/kaka_200_dip"
+        android:layout_height="@dimen/kaka_40_dip"
+        android:layout_marginTop="@dimen/kaka_40_dip"
+        android:background="@drawable/register_input" >
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/kaka_10_dip"
+            android:background="@null"
+            android:hint="昵称"
+            android:inputType="text"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/kaka_200_dip"
+        android:layout_height="@dimen/kaka_40_dip"
+        android:layout_marginTop="@dimen/kaka_16_dip"
+        android:background="@drawable/register_input" >
+
+        <TextView
+            android:id="@+id/tv_gender"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/kaka_10_dip"
+            android:background="@null"
+            android:text="性别"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_regist_huaban"
+        android:layout_width="@dimen/kaka_200_dip"
+        android:layout_height="@dimen/kaka_50_dip"
+        android:layout_marginTop="@dimen/kaka_16_dip"
+        android:background="@drawable/register_btn2"
+        android:text="绘制我的画板"
+        android:textColor="#0099FF"
+        android:textSize="15sp"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>
